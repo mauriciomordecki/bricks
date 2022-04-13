@@ -1,5 +1,5 @@
-name: {{name.snakeCase()}}_repository
-description: {{name.pascalCase()}}Repository pure dart package.
+name: repository
+description: Repository pure dart package.
 version: 0.0.1
 
 environment: 
@@ -7,8 +7,10 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  equatable: ^2.0.3
   flutter:
     sdk: flutter
+  json_serializable: ^6.1.5
 
 dev_dependencies:
   flutter_test:

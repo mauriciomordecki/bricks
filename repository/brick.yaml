@@ -23,8 +23,9 @@ vars:
     type: string
     description: The repository's name
     default: user
-    prompt: Repository name
-  function_signatures:
+    prompt: "Repository name:"
+  model:
     type: string
-    description: the function signatures for the repository
-    prompt: Insert function signatures in dart syntax
+    description: A first model for the repository
+    default: user
+    prompt: "Model name:"
