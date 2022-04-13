@@ -1,5 +1,5 @@
-name: repository
-description: Repository pure dart package.
+name: {{name.snakeCase()}}_repository
+description: {{name.pascalCase()}}Repository pure dart package.
 version: 0.0.1
 
 environment: 

@@ -22,10 +22,8 @@ vars:
   name:
     type: string
     description: The repository's name
-    default: user
     prompt: "Repository name:"
   model:
     type: string
     description: A first model for the repository
-    default: user
     prompt: "Model name:"
