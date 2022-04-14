@@ -1,5 +1,5 @@
 name: ui_package
-description: A new brick created with the Mason CLI.
+description: The UI package brick from SomnioSoftware
 
 # The following defines the version and build number for your brick.
 # A version number is three numbers separated by dots, like 1.2.34
@@ -31,3 +31,85 @@ vars:
     type: string
     description: The secondary color in Hex without prefix nor alpha channel
     prompt: Secondary color in hex (00FF00 is green)
+  defines_tertiary_color:
+    type: boolean
+    description: wether the design specifies a tertiary color
+    prompt: Define tertiary color?
+    default: false
+  tertiary_color:
+    type: string
+    description: The tertiary color in Hex without prefix nor alpha channel
+    prompt: Tertiary color in hex (00FF00 is green) [OPTIONAL]
+  defines_white:
+    type: boolean
+    description: wether the design specifies a white color
+    prompt: Special white?
+    default: false
+  white:
+    type: string
+    description: The white color in Hex without prefix nor alpha channel
+    prompt: White to use in hex (00FF00 is green) [OPTIONAL]
+  defines_black:
+    type: boolean
+    description: wether the design specifies a white color
+    prompt: Special black?
+    default: false
+  black:
+    type: string
+    description: The white color in Hex without prefix nor alpha channel
+    prompt: Black to use in hex (00FF00 is green) [OPTIONAL]
+  headline1_size:
+    type: string
+    description: The font size of the headline1
+    prompt: Size for headline1
+  headline1_weight:
+    type: string
+    description: The font weight of the headline1
+    prompt: Fontweight for headline1
+  headline2:
+    type: boolean
+    description: Wether the design has a headline2
+    prompt: Define a headline2?
+  headline2_size:
+    type: string
+    description: The font weight of the headline2
+    prompt: Size for headline2
+  headline2_weight:
+    type: string
+    description: The font weight of the headline2
+    prompt: The fontweight of headline2
+  body1_size:
+    type: string
+    description: The font weight of the body1
+    prompt: Size for body1
+  body1_weight:
+    type: string
+    description: The font weight of the body1
+    prompt: The fontweight of body1
+  body2:
+    type: boolean
+    description: Wether the design has a body2
+    prompt: Define a body2?
+  body2_size:
+    type: string
+    description: The font weight of the body2
+    prompt: Size for body2
+  body2_weight:
+    type: string
+    description: The font weight of the body2
+    prompt: The fontweight of body2
+  button:
+    type: boolean
+    description: Wether the design has a button
+    prompt: Define a button font?
+  button_size:
+    type: string
+    description: The font weight of the button
+    prompt: Size for button font
+  button_weight:
+    type: string
+    description: The font weight of the button
+    prompt: The fontweight of button
+      
+# TODO:
+# Support font weights in written style e.g. bold, semibold
