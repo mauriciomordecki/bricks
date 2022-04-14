@@ -1,0 +1,38 @@
+name: quine
+description: A new brick created with the Mason CLI.
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev <0.1.0"
+
+vars:
+  quine:
+    type: string
+    description: The quine
+    prompt: Use default to preserve quine
+    default: "quine/__brick__/{{{quine}}}"
+  brick_yaml_file:
+    type: string
+    description: The whole braick.yaml file
+    prompt: Use default to preserve quine
+    default: |
+      name: quine
+      description: A new brick created with the Mason CLI.
+
+      version: 0.1.0+1
+
+      environment:
+        mason: ">=0.1.0-dev <0.1.0"
+
+      vars:
+        quine:
+          type: string
+          description: The quine
+          prompt: Use default to preserve quine
+          default: "quine/__brick__/{{{quine}}}"
+        brick_yaml_file:
+          type: string
+          description: The whole braick.yaml file
+          prompt: Use default to preserve quine
+          default: {{{brick_yaml_file}}}
